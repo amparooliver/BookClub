@@ -1,0 +1,282 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2E9C3;
+  color: #595634;
+  line-height: 1.6;
+}
+
+h1, h2, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #595634;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #595634;
+    font-size: 2.8rem;
+    line-height: 1;    
+}
+
+a {
+  color: #3b7f78;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@font-face {
+  font-family: 'ITC Motter Corpus';
+  src: url('MotterCorpus-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.logo-title {
+  font-family: 'ITC Motter Corpus', serif;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #F9F4E0; /* light creamy background */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px dashed #ccb999;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #595634;
+}
+
+/* ==== CURRENT BOOK SECTION ==== */
+#current-book {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.current-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Layout del libro actual */
+.featured-book {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-cover {
+  width: 200px;
+  height: auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: rotateZ(-1deg);
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.club-title {
+  width: 500px;
+  height: auto;
+}
+
+.book-cover:hover {
+  transform: rotateZ(0deg) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.book-meta {
+  max-width: 300px;
+  text-align: left;
+}
+/* Texto vertical para títulos */
+.vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #595634;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.shelf {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  background: linear-gradient(to bottom, #8d6e4f, #5e4732);
+  border-radius: 0 0 6px 6px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Título vertical en tarjetas laterales */
+.side-card {
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.side-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: absolute;
+  left: -1.8rem;
+  top: 0.5rem;
+  color: #595634;
+}
+.side-card {
+  font-weight: bold;
+  background-color: #AAD3BD;
+  /*border: 1px solid #e2d2b6;*/
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 160px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.side-card img {
+  width: 100%;
+  border-radius: 8px;
+  /*margin-bottom: 0.2rem;*/
+  margin-top: 0.5rem;
+}
+
+/* ==== SHELF & SWIPER ==== */
+#carrusel {
+  background-color: #fcf7ec;
+  padding: 2rem 1rem;
+}
+
+.shelf {
+  width: 100%;
+  height: 12px;
+  background: #d6c7aa;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.swiper-slide {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-4px);
+}
+/* Sombra para los libros del carrusel */
+.book-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem;
+}
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 3px 6px 12px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* ==== MANIFIESTO ==== */
+#reglas {
+  padding: 2rem 1rem;
+  background-color: #ede0cb;
+}
+
+#reglas ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+#reglas li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: #f2e8d9;
+  color: #6d5f4c;
+  border-top: 2px dashed #ccb999;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .current-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .book-cover {
+    width: 140px;
+  }
+
+  #reglas ul {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}

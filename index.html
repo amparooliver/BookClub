@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Plot Thickens 📚</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="/assets/fonts/itc-motter-corpus.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="content-wrapper">
+  <header>
+    <img class="club-title" src="/assets/img/ThePlotThickensTitle.png" alt="Portada libro actual">
+    <p>Club de lectura mensual — sin spoilers garantizado 💬</p>
+  </header>
+
+  <section id="current-book">
+    <h2>📖 Leyendo ahora</h2>
+    <div class="current-layout">
+      <div class="featured-book">
+        <div class="book-meta">
+          <h3>Problematic Summer Romance</h3>
+          <p>Reunión: 29 de junio</p>
+        </div>
+        <img class="book-cover" src="/assets/img/problematicsummer.jpg" alt="Portada libro actual">
+        <div class="shelf"></div>
+      </div>
+    <div class="side-card">
+        <div class="side-title">Autora del mes</div>
+        <p>Ali Hazelwood</p>
+        <img src="/assets/img/AliHazelwood.jpg" alt="Autora del mes">
+      </div>
+      <div class="side-card">
+        <div class="side-title">Último leído</div>
+        <p>Quicksilver</p>
+        <img src="/assets/img/quicksilver.jpg" alt="Último libro leído">
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="carrusel">
+    <h2>📚 Nuestra estantería</h2>
+    <div class="shelf"></div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide book-card">
+          <span class="vertical-title">Orgullo y Prejuicio</span>
+          <a href="/libros/orgullo-prejuicio.html">
+            <img src="/assets/img/orgullo.jpg" alt="Orgullo y Prejuicio">
+          </a>
+        </div>
+        <div class="swiper-slide book-card">
+          <span class="vertical-title">El Círculo Literario</span>
+          <a href="/libros/circulo-literario.html">
+            <img src="/assets/img/circulo.jpg" alt="Círculo Literario">
+          </a>
+        </div>
+        <!-- Más slides -->
+      </div>
+    </div>
+  </section>
+
+  <section id="reglas">
+    <h2>📜 Manifiesto del club</h2>
+    <ul>
+      <li>📌 Leemos un libro por mes</li>
+      <li>🗳 Lo elegimos por votación</li>
+      <li>🚫 En el grupo de WhatsApp no se permiten spoilers</li>
+      <li>📆 Nos reunimos para compartir y debatir</li>
+      <li>🌟 Cada voz cuenta</li>
+    </ul>
+  </section>
+</div>
+  <footer>
+    <p>Hecho con 💚 por Amparo | <a href="https://github.com/tu-usuario">GitHub</a></p>
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
+      },
+    });
+  </script>
+</body>
+</html>
