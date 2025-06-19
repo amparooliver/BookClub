@@ -84,13 +84,14 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 4rem;
-  align-items: center;
 }
 
 /* Layout del libro actual */
 .featured-book {
   display: flex;
+  
   gap: 1.5rem;
   align-items: center;
   flex-wrap: wrap;
@@ -107,9 +108,12 @@ header p {
 }
 
 .club-title {
-  width: 500px;
+  max-width: 80%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .book-cover:hover {
   transform: rotateZ(0deg) scale(1.03);
