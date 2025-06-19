@@ -19,30 +19,39 @@
     <p>Club de lectura mensual — sin spoilers garantizado 💬</p>
   </header>
 
-  <section id="current-book">
-    <h2>📖 Leyendo ahora</h2>
+    <section id="current-book">
     <div class="current-layout">
-      <div class="featured-book">
+        <div class="book-and-meta-container">
+        <!-- Book Meta (Left) -->
         <div class="book-meta">
-          <h3>Problematic Summer Romance</h3>
-          <p>Reunión: 29 de junio</p>
+        <h3>Problematic Summer Romance</h3>
+        <p>Reunión: 29 de junio</p>
         </div>
+        
+        <!-- Featured Book (Center) -->
+        <div class="featured-book">
         <img class="book-cover" src="assets/img/problematicsummer.jpg" alt="Portada libro actual">
+        </div>
+        </div>
+
+        <!-- Side Cards (Right) -->
+        <div class="side-cards">
+        <div class="side-card">
+            <div class="side-title">Autora del mes</div>
+            <p>Ali Hazelwood</p>
+            <img src="assets/img/AliHazelwood.jpg" alt="Autora del mes">
+        </div>
+        <div class="side-card">
+            <div class="side-title">Último leído</div>
+            <p>Quicksilver</p>
+            <img src="assets/img/quicksilver.jpg" alt="Último libro leído">
+        </div>
+        </div>
+        
+        <!-- Shelf spans under book meta and cover -->
         <div class="shelf"></div>
-      </div>
-    <div class="side-card">
-        <div class="side-title">Autora del mes</div>
-        <p>Ali Hazelwood</p>
-        <img src="assets/img/AliHazelwood.jpg" alt="Autora del mes">
-      </div>
-      <div class="side-card">
-        <div class="side-title">Último leído</div>
-        <p>Quicksilver</p>
-        <img src="assets/img/quicksilver.jpg" alt="Último libro leído">
-      </div>
-      
     </div>
-  </section>
+    </section>
 
   <section id="carrusel">
     <h2>📚 Nuestra estantería</h2>
@@ -51,14 +60,14 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide book-card">
           <span class="vertical-title">Orgullo y Prejuicio</span>
-          <a href="/libros/orgullo-prejuicio.html">
-            <img src="assets/img/orgullo.jpg" alt="Orgullo y Prejuicio">
+          <a href="/libros/quicksilver.html">
+            <img src="assets/img/problematicsummer.jpg" alt="Orgullo y Prejuicio">
           </a>
         </div>
         <div class="swiper-slide book-card">
           <span class="vertical-title">El Círculo Literario</span>
           <a href="/libros/circulo-literario.html">
-            <img src="assets/img/circulo.jpg" alt="Círculo Literario">
+            <img src="assets/img/quicksilver.jpg" alt="Círculo Literario">
           </a>
         </div>
         <!-- Más slides -->
